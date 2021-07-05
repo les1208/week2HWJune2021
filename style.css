@@ -1,0 +1,69 @@
+h1 {
+text-align: center;
+margin: 20px;
+}
+
+body {
+	background-color: azure;
+}
+
+#window {
+	border: 1px solid;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+img {
+	width: 400px;
+	height: 400px;
+}
+
+#imageSlider {
+	display: flex;
+	transform: translateX(-400px);
+	animation: anime 12s infinite;
+}
+@keyframes anime {
+	0% { transition: ease-in; transform: translateX(-100%); }
+	10% { transition: ease-in; transform: translateX(-200%); }
+	20% { transition: ease-in; transform: translateX(-300%); }
+	30% { transition: ease-in; transform: translateX(-400%); }
+	40% { transition: ease-in; transform: translateX(-500%); }
+	50% { transition: ease-in; transform: translateX(-600%); }
+	60% { transition: ease-in; transform: translateX(-500%); }
+	70% { transition: ease-in; transform: translateX(-400%); }
+	80% { transition: ease-in; transform: translateX(-300%); }
+	90% { transition: ease-in; transform: translateX(-200%); }
+	100% { transition: ease-in; transform: translateX(-100%); }
+	}
+
+/* Javascipt */
+
+#windowJS {
+	border: 1px solid;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#imageSliderDos {
+	display: flex;
+}
+
+
+#buttons {  
+	transition-duration: 0.4s;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	margin-top: 10px;
+}
+
+.prevSlide:hover, .nextSlide:hover {
+	color: blueviolet;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
